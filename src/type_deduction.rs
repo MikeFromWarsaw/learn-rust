@@ -1,6 +1,9 @@
 fn main() {
     // Prosty i dobry opis zagadnienia składni turbofish można znaleźć tutaj
     // https://techblog.tonsser.com/posts/what-is-rusts-turbofish
+    // Jednak całkiem wyczerpująco opowiada sam kompilator Rusta:
+    // `rustc --explain E0282`
+    
        
     let numbers : Vec<i32> = vec![1, 2, 3];
     
