@@ -32,11 +32,15 @@ fn main() {
         .filter(|n| n == &6)
         .collect::<Vec<i32>>().len();
 
-    // TODO: Przy użyciu funkcji count.
-    // scored  = class_scores
-    //    .into_iter()
-    //    .filter(|n| n == &6)
-    //    .count();
-
     println!("Liczna 6 w klasie to {:?}", scored);
+
+    let class_scores_2 : Vec<i32> = vec![5, 3, 3, 3, 2, 6, 6];
+
+    // Efektywna wersja.
+    let scored_2  = class_scores_2
+        .into_iter()
+        .filter(|n| n == &6)
+        .count();
+    println!("Liczna 6 w klasie to {:?}", scored_2);
+    
 }
